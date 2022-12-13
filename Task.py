@@ -8,3 +8,15 @@ def generateKey():
 
 
 print(generateKey())
+
+# function to decrypt the code
+
+
+def decryptKey(code):
+    # spliting the code into a list of integers
+    L = code.split(',')
+    # converting the list of integers into a list of characters
+    for i in range(len(L)):
+        L[i] = int(L[i])
+        chars = []
+        chars[i] = chr(L[i])
