@@ -15,8 +15,12 @@ print(generateKey())
 def decryptKey(code):
     # spliting the code into a list of integers
     L = code.split(',')
+    chars = []
     # converting the list of integers into a list of characters
     for i in range(len(L)):
         L[i] = int(L[i])
-        chars = []
-        chars[i] = chr(L[i])
+        chars.append(chr(L[i]))
+    print(chars)
+
+
+print("please input the code to decrypt:")
