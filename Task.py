@@ -23,4 +23,6 @@ def decryptKey(code):
     print(chars)
 
 
-print("please input the code to decrypt:")
+s = input("please input the code to decrypt:")
+
+decryptKey(s)
